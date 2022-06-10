@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/3-column-preview-card-4M3yZ0OoC5)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0/hub/single-introductory-section-01j0V1uJ2w)
 - Live Site URL: [Github](https://kinjames.github.io/single-introductry-page/)
 
 ## My process

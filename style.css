@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive; 
+    color: #fff;
+    margin: 20px 0;
+    font-size: 35px;
+}
+
+.container {
+    width: 1140px;
+    height: 100%;
+    margin: 100px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-text {
+    margin-bottom: 75px;
+}
+
+.card {
+    width: 25%;
+    padding: 40px;
+    height: auto;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.card2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    width: 75%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn1:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn2:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn3:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%);
+font-size: 16px;
+padding: 20px; }
+
+@media only screen and (max-width:600px) {
+    .container,body,main,.card{
+        width: 100%;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+
+    .btn{
+        width: 70%;
+    }
+
+    .card1 {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card3 {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+/* https://kinjames.github.io/preview/ */
+/* https://github.com/kinjames/preview */
+/* https://github.com/kinjames */

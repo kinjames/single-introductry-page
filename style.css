@@ -1,129 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body {
-    height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-    font-family: 'Big Shoulders Display', cursive; 
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 30px;
+}
+
+i {
+    text-align: center;
+}
+
+li {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
     color: #fff;
-    margin: 20px 0;
-    font-size: 35px;
+    border-radius: 50%;
+}
+
+li:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
 }
 
 .container {
-    width: 1140px;
-    height: 100%;
-    margin: 100px auto;
-    padding: 30px;
+    padding: 0 30px;
+    margin: 40px auto;
+    max-width: 1440px;
+}
+
+.header {
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    margin-bottom: 60px;
+}
+
+.main-items {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
-.small-text {
-    margin-bottom: 75px;
+
+
+.image img {
+    max-width: 100%;
 }
 
-.card {
-    width: 25%;
-    padding: 40px;
-    height: auto;
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 14px;
+.image {
+    width: 60%;
+}
+
+.text {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
     color: #fff;
-}
-
-.card1 {
-    background-color: hsl(31, 77%, 52%);
-    border-radius: 10px 0 0 10px;
-}
-
-.card2{
-    background-color: hsl(184, 100%, 22%);
-}
-
-.card3 {
-    background-color: hsl(179, 100%, 13%);
-    border-radius: 0 10px 10px 0;
 }
 
 .btn {
-    padding: 10px 20px;
-    width: 75%;
+    width: 40%;
+    height: 40px;
+    padding: 5px;
     border-radius: 20px;
-    outline: none;
     border: none;
+    font: inherit;
     cursor: pointer;
+    box-shadow: 1px 5px 5px .5px #000;
 }
 
-.btn1 {
-    color: hsl(31, 77%, 52%);
-}
-
-.btn1:hover {
-    background-color: hsl(31, 77%, 52%);
+.btn:hover {
+    background-color: hsl(300, 69%, 71%);
     color: #fff;
-    border: 2px solid #fff;
+    box-shadow: 1px 5px 5px .5px #000;
 }
 
-.btn2 {
-    color: hsl(184, 100%, 22%);
-}
 
-.btn2:hover {
-    background-color: hsl(184, 100%, 22%);
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
     color: #fff;
-    border: 2px solid #fff;
-}
-
-.btn3 {
-    color: hsl(179, 100%, 13%);
-}
-
-.btn3:hover {
-    background-color: hsl(179, 100%, 13%);
-    color: #fff;
-    border: 2px solid #fff;
+    font-size: 16px;
+    text-decoration: none; 
 }
 
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%);
-font-size: 16px;
-padding: 20px; }
-
-@media only screen and (max-width:600px) {
-    .container,body,main,.card{
+@media only screen and (max-width:1200px) {
+    .image,.text,.container,body{
         width: 100%;
     }
 
-    .container{
-        flex-direction: column;
-    }
-
-
-    .btn{
-        width: 70%;
-    }
-
-    .card1 {
-        border-radius: 10px 10px 0 0;
-    }
-
-    .card3 {
-        border-radius: 0 0 10px 10px;
+    .image img {
+        width: 100%;
     }
 }
 
-/* https://kinjames.github.io/preview/ */
-/* https://github.com/kinjames/preview */
-/* https://github.com/kinjames */
+
+/* smaller to larger phones */
+@media only screen and (max-width:600px) {
+
+    body {
+        background-color: hsl(257, 40%, 49%);
+        background-image: url(images/bg-mobile.svg);
+    }
+
+    .image,.text,.container,body{
+        width: 100%;
+    }
+
+    .text {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header {
+        font-size: 25px;
+    }
+    .main-items{
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    .btn {
+        width: 70%;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    ul {
+        gap: 20px;
+    }
+
+    li {
+        height: 35px;
+        width: 35px;
+    }
+}

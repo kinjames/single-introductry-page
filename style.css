@@ -93,6 +93,8 @@ li:hover {
     border: none;
     font: inherit;
     cursor: pointer;
+    color: #000;
+    background-color: #fff;
     box-shadow: 1px 5px 5px .5px #000;
 }
 
